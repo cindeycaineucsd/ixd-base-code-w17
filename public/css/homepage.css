@@ -1,7 +1,29 @@
 .profile {
-	position: relative;
+    left: 50%;
+    position: absolute;
+    top: 50%;
 	background: none;
+    display: inline-block;
+
 }
+
+.profile img {
+
+    max-width: 200px;
+}
+
+.profileicon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.settings {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
 
 .navbar {
 	list-style-type: none;
