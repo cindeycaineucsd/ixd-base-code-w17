@@ -1,52 +1,4 @@
-<!DOCTYPE html>
-
-<html>
-<head>
-	<title>Create New Story</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/homepage.css" rel="stylesheet">
-	<link href="/css/createnew.css" rel="stylesheet">
-
-</head>
-<body>
-	<div class = "settings">
-		<a href="/settings"><h4>Settings</h4></a>
-	</div>
-
-	<div class = "profileicon">
-		<a href="/profile"><h4>profile</h4></a>
-	</div>
-
-    <div class="top-bar">
-            <button id="save-btn">Save</button>
-            <button id="undo-btn">Undo</button>
-            <button id="clear-btn">Clear</button>
-            <input type="color" id="color-picker">
-            <input type="range" id="brush-size" min="1" max="50" value="10">
-	</div>
-
-
-
-	<canvas id = "draw">
-		Sorry, your browser does not support canvas.
-	</canvas>
-
-
-
-
-	<ul class= "navbar">
-		<li><a href= "/home"> Home </a></li>
-		<li><a href= "/trending"> Trending </a></li>
-		<li><a class = "active" href= "/newstory"> New Story </a></li>
-		<li><a href= "/notifications"> Notifications </a></li>
-	</ul>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript">
-    	var canvas, ctx,
+var canvas, ctx,
     brush = {
         x: 0,
         y: 0,
@@ -141,9 +93,3 @@ function init () {
 }
 
 $(init);
-
-    </script>
-
-
-</body>
-</html>

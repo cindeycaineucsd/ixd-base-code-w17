@@ -9,6 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var home = require('./routes/home');
 var newstory = require('./routes/newstory');
 var trending = require('./routes/trending');
 var notifications = require('./routes/notifications');
@@ -44,6 +45,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
+app.get('/home', home.viewHome);
 app.get('/newstory', newstory.createNew);
 app.get('/trending', trending.viewTrending);
 app.get('/notifications', notifications.viewNote);

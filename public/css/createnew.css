@@ -1,8 +1,20 @@
-.storytype {
+.body {
 	margin: 0;
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	margin-right: -50%;
-	text-transform: translate(-50%,-50%);
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: #3af;
+    border-bottom: 2px solid black;
+    position: absolute;
+    width: 100%;
+}
+
+.top-bar * {
+    margin: 5px 10px;
+}
+
+#draw {
+    display: block;
 }

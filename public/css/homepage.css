@@ -1,6 +1,9 @@
 .profile {
     vertical-align: top;
-    display: inline-block;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
     text-align: center;
     margin-left:  auto;
     margin-right: auto;
